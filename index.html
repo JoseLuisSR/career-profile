@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jose Luis Sastoque Rey – Software Architect</title>
+  <meta name="description" content="Software Architect | AWS Community Builder | Open Source Lover – Colombia" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__logo">&lt;<span>joseluissr</span> /&gt;</div>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" class="nav__cta">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <div class="hero__avatar-wrap">
+        <img
+          class="hero__avatar"
+          src="https://avatars.githubusercontent.com/u/25857748?v=4"
+          alt="Jose Luis Sastoque Rey profile picture"
+          width="200"
+          height="200"
+        />
+        <span class="hero__badge">AWS Builder</span>
+      </div>
+
+      <div>
+        <p class="hero__greeting">👋 Hello, World! I'm</p>
+        <h1 class="hero__name">Jose Luis <span>Sastoque Rey</span></h1>
+        <p class="hero__tagline">
+          <strong>Software Architect</strong> · AWS Community Builder · Open Source Enthusiast
+        </p>
+        <div class="hero__location">
+          <i class="fas fa-map-marker-alt"></i> Colombia
+        </div>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">
+            <i class="fas fa-code-branch"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn--outline">
+            <i class="fas fa-paper-plane"></i> Get in Touch
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div>
+            <div class="hero__stat-number">16+</div>
+            <div class="hero__stat-label">Years Exp.</div>
+          </div>
+          <div>
+            <div class="hero__stat-number">13</div>
+            <div class="hero__stat-label">Repositories</div>
+          </div>
+          <div>
+            <div class="hero__stat-number">8</div>
+            <div class="hero__stat-label">Articles</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      scroll down
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section class="about" id="about">
+    <div class="section-header reveal">
+      <p class="section-label">// about me</p>
+      <h2 class="section-title">Crafting <span>Scalable Solutions</span></h2>
+      <p class="section-desc">A glimpse into who I am and what drives me.</p>
+    </div>
+
+    <div class="about__inner">
+      <div class="about__text reveal">
+        <p>
+          I'm a <strong>Software Architect</strong> with <strong>16+ years of experience</strong>
+          designing and building scalable applications across cloud, messaging, performance testing
+          and automation domains.
+        </p>
+        <p>
+          My core stack revolves around <strong>Java</strong>, <strong>AWS</strong> and
+          <strong>Clean Architecture</strong> principles. I believe great software solves real
+          problems elegantly — and I bring that mindset to every project, from open-source
+          libraries to enterprise cloud solutions.
+        </p>
+        <p>
+          As an <strong>AWS Community Builder</strong>, I actively share knowledge through
+          technical articles, community events, and open-source contributions that help teams
+          build better, more resilient systems on the cloud.
+        </p>
+      </div>
+
+      <div class="about__highlights reveal">
+        <div class="highlight-card">
+          <div class="highlight-card__icon icon--blue">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div>
+            <div class="highlight-card__title">Cloud Architecture</div>
+            <div class="highlight-card__desc">Designing resilient, cost-optimised AWS solutions with serverless and container-based workloads.</div>
+          </div>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-card__icon icon--teal">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <div>
+            <div class="highlight-card__title">Messaging &amp; Streaming</div>
+            <div class="highlight-card__desc">Building event-driven systems with Kafka, AWS Kinesis, SQS, SNS and IBM MQ.</div>
+          </div>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-card__icon icon--orange">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <div>
+            <div class="highlight-card__title">Performance Testing</div>
+            <div class="highlight-card__desc">Creating JMeter plugins (awsmeter, mqmeter) that enable load testing at scale on cloud services.</div>
+          </div>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-card__icon icon--purple">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div>
+            <div class="highlight-card__title">Open Source Lover</div>
+            <div class="highlight-card__desc">Contributing back to the community with libraries, demos and technical writing.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+  ============================================================ -->
+  <section class="skills" id="skills">
+    <div class="section-header reveal">
+      <p class="section-label">// tech stack</p>
+      <h2 class="section-title">Skills &amp; <span>Technologies</span></h2>
+      <p class="section-desc">Technologies I work with day to day.</p>
+    </div>
+
+    <div class="skills__inner">
+      <div class="skills__grid">
+        <!-- Languages -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <div class="highlight-card__icon icon--blue"><i class="fas fa-code"></i></div>
+            <div class="skill-category__title">Languages</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Bash / Shell</span>
+            <span class="skill-tag">YAML</span>
+          </div>
+        </div>
+
+        <!-- AWS -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <div class="highlight-card__icon icon--orange"><i class="fab fa-aws"></i></div>
+            <div class="skill-category__title">AWS Cloud</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--orange">Lambda</span>
+            <span class="skill-tag skill-tag--orange">API Gateway</span>
+            <span class="skill-tag skill-tag--orange">DynamoDB</span>
+            <span class="skill-tag skill-tag--orange">Kinesis</span>
+            <span class="skill-tag skill-tag--orange">SQS / SNS</span>
+            <span class="skill-tag skill-tag--orange">EC2 / VPC</span>
+            <span class="skill-tag skill-tag--orange">CloudFormation</span>
+            <span class="skill-tag skill-tag--orange">Cognito</span>
+          </div>
+        </div>
+
+        <!-- Messaging & Streaming -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <div class="highlight-card__icon icon--teal"><i class="fas fa-stream"></i></div>
+            <div class="skill-category__title">Messaging &amp; Streaming</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--teal">Apache Kafka</span>
+            <span class="skill-tag skill-tag--teal">IBM MQ</span>
+            <span class="skill-tag skill-tag--teal">ActiveMQ</span>
+            <span class="skill-tag skill-tag--teal">AWS Kinesis</span>
+            <span class="skill-tag skill-tag--teal">Pub/Sub</span>
+          </div>
+        </div>
+
+        <!-- Architecture -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <div class="highlight-card__icon icon--purple"><i class="fas fa-sitemap"></i></div>
+            <div class="skill-category__title">Architecture Patterns</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--purple">Clean Architecture</span>
+            <span class="skill-tag skill-tag--purple">Microservices</span>
+            <span class="skill-tag skill-tag--purple">Serverless</span>
+            <span class="skill-tag skill-tag--purple">Event-Driven</span>
+            <span class="skill-tag skill-tag--purple">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Infrastructure -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <div class="highlight-card__icon icon--blue"><i class="fas fa-server"></i></div>
+            <div class="skill-category__title">Infrastructure &amp; DevOps</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">n8n</span>
+            <span class="skill-tag">AWS SAM</span>
+            <span class="skill-tag">CloudFormation</span>
+            <span class="skill-tag">GitHub Actions</span>
+          </div>
+        </div>
+
+        <!-- Testing -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <div class="highlight-card__icon icon--orange"><i class="fas fa-vial"></i></div>
+            <div class="skill-category__title">Performance Testing</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--orange">Apache JMeter</span>
+            <span class="skill-tag skill-tag--orange">awsmeter</span>
+            <span class="skill-tag skill-tag--orange">mqmeter</span>
+            <span class="skill-tag skill-tag--orange">Load Testing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+  ============================================================ -->
+  <section class="projects" id="projects">
+    <div class="section-header reveal">
+      <p class="section-label">// open source</p>
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <p class="section-desc">Open-source libraries and demos on GitHub.</p>
+    </div>
+
+    <div class="projects__inner">
+      <div class="projects__grid">
+
+        <!-- mqmeter -->
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <i class="fas fa-plug project-card__icon"></i>
+            <div class="project-card__links">
+              <a href="https://github.com/JoseLuisSR/mqmeter" target="_blank" rel="noopener" aria-label="View mqmeter on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__name">mqmeter</div>
+          <div class="project-card__desc">IBM MQ JMeter Extension — enables load testing against IBM MQ message queues directly from Apache JMeter.</div>
+          <div class="project-card__footer">
+            <div class="project-card__lang">
+              <span class="lang-dot lang-dot--java"></span> Java
+            </div>
+            <div class="project-card__meta">
+              <span class="meta-item"><i class="fas fa-star"></i> 26</span>
+              <span class="meta-item"><i class="fas fa-code-branch"></i> 15</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- springboot-aws-serverless -->
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <i class="fas fa-bolt project-card__icon"></i>
+            <div class="project-card__links">
+              <a href="https://github.com/JoseLuisSR/springboot-aws-serverless" target="_blank" rel="noopener" aria-label="View springboot-aws-serverless on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__name">springboot-aws-serverless</div>
+          <div class="project-card__desc">Serverless app with Spring Boot integrated with AWS API Gateway, Lambda and DynamoDB, deployed via CloudFormation.</div>
+          <div class="project-card__footer">
+            <div class="project-card__lang">
+              <span class="lang-dot lang-dot--java"></span> Java
+            </div>
+            <div class="project-card__meta">
+              <span class="meta-item"><i class="fas fa-star"></i> 24</span>
+              <span class="meta-item"><i class="fas fa-code-branch"></i> 13</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- awsmeter -->
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <i class="fab fa-aws project-card__icon"></i>
+            <div class="project-card__links">
+              <a href="https://github.com/JoseLuisSR/awsmeter" target="_blank" rel="noopener" aria-label="View awsmeter on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__name">awsmeter</div>
+          <div class="project-card__desc">JMeter plugin for load testing Kinesis, SQS, SNS and Cognito AWS services — all from a single JMeter test plan.</div>
+          <div class="project-card__footer">
+            <div class="project-card__lang">
+              <span class="lang-dot lang-dot--java"></span> Java
+            </div>
+            <div class="project-card__meta">
+              <span class="meta-item"><i class="fas fa-star"></i> 20</span>
+              <span class="meta-item"><i class="fas fa-code-branch"></i> 16</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- springboot-activemq -->
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <i class="fas fa-comments project-card__icon"></i>
+            <div class="project-card__links">
+              <a href="https://github.com/JoseLuisSR/springboot-activemq" target="_blank" rel="noopener" aria-label="View springboot-activemq on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__name">springboot-activemq</div>
+          <div class="project-card__desc">Spring Boot application with an embedded ActiveMQ message broker demonstrating producer-consumer patterns.</div>
+          <div class="project-card__footer">
+            <div class="project-card__lang">
+              <span class="lang-dot lang-dot--java"></span> Java
+            </div>
+            <div class="project-card__meta">
+              <span class="meta-item"><i class="fas fa-star"></i> 14</span>
+              <span class="meta-item"><i class="fas fa-code-branch"></i> 4</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- publish-subscribe -->
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <i class="fas fa-rss project-card__icon"></i>
+            <div class="project-card__links">
+              <a href="https://github.com/JoseLuisSR/publish-subscribe" target="_blank" rel="noopener" aria-label="View publish-subscribe on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__name">publish-subscribe</div>
+          <div class="project-card__desc">Publish &amp; Subscribe connector bridging Apache Kafka and IBM MQ message brokers in a unified interface.</div>
+          <div class="project-card__footer">
+            <div class="project-card__lang">
+              <span class="lang-dot lang-dot--java"></span> Java
+            </div>
+            <div class="project-card__meta">
+              <span class="meta-item"><i class="fas fa-star"></i> 1</span>
+              <span class="meta-item"><i class="fas fa-code-branch"></i> 1</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- whatsapp-calendar-bot -->
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <i class="fab fa-whatsapp project-card__icon"></i>
+            <div class="project-card__links">
+              <a href="https://github.com/JoseLuisSR/whatsapp-calendar-bot" target="_blank" rel="noopener" aria-label="View whatsapp-calendar-bot on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__name">whatsapp-calendar-bot</div>
+          <div class="project-card__desc">WhatsApp bot with voice &amp; text transcription capabilities, built on n8n workflows and deployed on AWS.</div>
+          <div class="project-card__footer">
+            <div class="project-card__lang">
+              <i class="fas fa-terminal" style="font-size:10px;color:#89d185"></i>&nbsp;Shell
+            </div>
+            <div class="project-card__meta">
+              <span class="meta-item"><i class="fas fa-star"></i> –</span>
+              <span class="meta-item"><i class="fas fa-code-branch"></i> –</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:40px;" class="reveal">
+        <a href="https://github.com/JoseLuisSR?tab=repositories" target="_blank" rel="noopener" class="btn btn--outline">
+          <i class="fab fa-github"></i> All Repositories
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ARTICLES
+  ============================================================ -->
+  <section class="articles" id="articles">
+    <div class="section-header reveal">
+      <p class="section-label">// technical writing</p>
+      <h2 class="section-title">Latest <span>Articles</span></h2>
+      <p class="section-desc">Sharing knowledge on AWS, architecture &amp; cloud networking on DEV Community.</p>
+    </div>
+
+    <div class="articles__inner">
+      <div class="articles__grid">
+
+        <a href="https://dev.to/aws-builders/data-streaming-architecture-32j0" target="_blank" rel="noopener" class="article-card reveal">
+          <div class="article-card__banner"></div>
+          <div class="article-card__body">
+            <div class="article-card__tags">
+              <span class="article-tag">AWS</span>
+              <span class="article-tag">BigData</span>
+              <span class="article-tag">Architecture</span>
+            </div>
+            <div class="article-card__title">Data Streaming Architecture</div>
+            <div class="article-card__desc">An overview of data streaming patterns, tools, and how to design robust real-time pipelines on AWS.</div>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__date">Mar 27, 2024</span>
+            <span class="article-card__read">Read more <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="https://dev.to/aws-builders/data-streaming-architecture-basics-52d7" target="_blank" rel="noopener" class="article-card reveal">
+          <div class="article-card__banner"></div>
+          <div class="article-card__body">
+            <div class="article-card__tags">
+              <span class="article-tag">AWS</span>
+              <span class="article-tag">BigData</span>
+            </div>
+            <div class="article-card__title">Data Streaming Architecture Basics</div>
+            <div class="article-card__desc">The foundational concepts behind data streaming, from producers and consumers to brokers and partitions.</div>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__date">Mar 27, 2024</span>
+            <span class="article-card__read">Read more <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="https://dev.to/aws-builders/dynamodb-basics-part-1-4e4i" target="_blank" rel="noopener" class="article-card reveal">
+          <div class="article-card__banner"></div>
+          <div class="article-card__body">
+            <div class="article-card__tags">
+              <span class="article-tag">AWS</span>
+              <span class="article-tag">NoSQL</span>
+              <span class="article-tag">DynamoDB</span>
+            </div>
+            <div class="article-card__title">DynamoDB Basics – Part 1</div>
+            <div class="article-card__desc">A hands-on introduction to Amazon DynamoDB: tables, items, partition keys and throughput capacity.</div>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__date">Mar 27, 2023</span>
+            <span class="article-card__read">Read more <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="https://dev.to/aws-builders/dynamodb-basics-1oe0" target="_blank" rel="noopener" class="article-card reveal">
+          <div class="article-card__banner"></div>
+          <div class="article-card__body">
+            <div class="article-card__tags">
+              <span class="article-tag">AWS</span>
+              <span class="article-tag">DynamoDB</span>
+              <span class="article-tag">NoSQL</span>
+            </div>
+            <div class="article-card__title">DynamoDB Basics – Part 2</div>
+            <div class="article-card__desc">Deep dive into secondary indexes, query vs scan operations, and DynamoDB best practices for production.</div>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__date">May 4, 2021</span>
+            <span class="article-card__read">Read more <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="https://dev.to/aws-builders/aws-bastion-host-jump-box-471g" target="_blank" rel="noopener" class="article-card reveal">
+          <div class="article-card__banner"></div>
+          <div class="article-card__body">
+            <div class="article-card__tags">
+              <span class="article-tag">AWS</span>
+              <span class="article-tag">Networking</span>
+            </div>
+            <div class="article-card__title">AWS Bastion Host / Jump Box</div>
+            <div class="article-card__desc">How to set up a secure Bastion Host on AWS to access private subnet resources without exposing them to the internet.</div>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__date">May 23, 2022</span>
+            <span class="article-card__read">Read more <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="https://dev.to/aws-builders/aws-networking-from-scratch-8dm" target="_blank" rel="noopener" class="article-card reveal">
+          <div class="article-card__banner"></div>
+          <div class="article-card__body">
+            <div class="article-card__tags">
+              <span class="article-tag">AWS</span>
+              <span class="article-tag">Networking</span>
+            </div>
+            <div class="article-card__title">AWS Networking from Scratch</div>
+            <div class="article-card__desc">Step-by-step guide to building a production-grade VPC with public/private subnets, NAT gateways and security groups.</div>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__date">Oct 12, 2021</span>
+            <span class="article-card__read">Read more <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+
+      <div style="text-align:center; margin-top:40px;" class="reveal">
+        <a href="https://dev.to/joseluissr" target="_blank" rel="noopener" class="btn btn--outline">
+          <i class="fab fa-dev"></i> All Articles on DEV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE TIMELINE
+  ============================================================ -->
+  <section class="experience" id="experience">
+    <div class="section-header reveal">
+      <p class="section-label">// journey</p>
+      <h2 class="section-title">Professional <span>Experience</span></h2>
+      <p class="section-desc">Key milestones throughout my engineering career.</p>
+    </div>
+
+    <div class="experience__inner">
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__date">2024 – Present</div>
+          <div class="timeline__title">Software Architect</div>
+          <div class="timeline__org">Cloud &amp; Automation</div>
+          <div class="timeline__desc">
+            Leading architecture decisions for cloud-native and serverless systems on AWS.
+            Building automation workflows with n8n, designing event-driven microservices,
+            and contributing open-source tooling for the community.
+          </div>
+          <div class="timeline__tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag skill-tag--teal">n8n</span>
+            <span class="skill-tag skill-tag--teal">Serverless</span>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__date">2021 – 2024</div>
+          <div class="timeline__title">AWS Community Builder</div>
+          <div class="timeline__org">AWS Community</div>
+          <div class="timeline__desc">
+            Selected as an AWS Community Builder, publishing technical articles on AWS networking,
+            DynamoDB, data streaming, and cloud architecture. Active participant in the global
+            AWS developer community.
+          </div>
+          <div class="timeline__tags">
+            <span class="skill-tag skill-tag--orange">AWS</span>
+            <span class="skill-tag skill-tag--orange">DynamoDB</span>
+            <span class="skill-tag skill-tag--orange">Networking</span>
+            <span class="skill-tag skill-tag--orange">Kinesis</span>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__date">~2018 – 2021</div>
+          <div class="timeline__title">Senior Software Engineer</div>
+          <div class="timeline__org">Enterprise Messaging &amp; Performance</div>
+          <div class="timeline__desc">
+            Developed Apache JMeter extensions (awsmeter, mqmeter) enabling performance-testing
+            of IBM MQ, Kafka, and AWS messaging services. Designed Pub/Sub patterns connecting
+            enterprise message brokers.
+          </div>
+          <div class="timeline__tags">
+            <span class="skill-tag">JMeter</span>
+            <span class="skill-tag skill-tag--teal">Kafka</span>
+            <span class="skill-tag skill-tag--teal">IBM MQ</span>
+            <span class="skill-tag">Java</span>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__date">~2008 – 2018</div>
+          <div class="timeline__title">Software Engineer</div>
+          <div class="timeline__org">Enterprise Applications</div>
+          <div class="timeline__desc">
+            10 years building enterprise Java applications, RESTful APIs and Spring-based
+            microservices for clients across multiple industries in Colombia and Latin America.
+          </div>
+          <div class="timeline__tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spring</span>
+            <span class="skill-tag">REST</span>
+            <span class="skill-tag skill-tag--purple">Clean Architecture</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       AWS COMMUNITY BUILDER BANNER
+  ============================================================ -->
+  <section class="community">
+    <div class="community__card reveal">
+      <div class="community__icon" aria-hidden="true">🏅</div>
+      <div>
+        <div class="community__label">Recognition</div>
+        <h2 class="community__title">AWS Community Builder</h2>
+        <p class="community__desc">
+          Recognised by Amazon Web Services as an <strong>AWS Community Builder</strong> — a select
+          group of passionate cloud enthusiasts who share technical knowledge, contribute to
+          the community, and help others build on AWS. Member since 2021.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="contact__inner reveal">
+      <div class="section-header" style="margin-bottom:0">
+        <p class="section-label">// contact</p>
+        <h2 class="section-title">Let's <span>Connect</span></h2>
+        <p class="section-desc">
+          Whether you want to collaborate on a project, discuss cloud architecture,
+          or just say hello — my inbox is always open.
+        </p>
+      </div>
+
+      <div class="contact__links">
+        <a href="https://github.com/JoseLuisSR" target="_blank" rel="noopener" class="contact-link contact-link--github">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/joseluissr/" target="_blank" rel="noopener" class="contact-link contact-link--linkedin">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://dev.to/joseluissr" target="_blank" rel="noopener" class="contact-link contact-link--devto">
+          <i class="fab fa-dev"></i> DEV Community
+        </a>
+        <a href="mailto:jose.luis.sastoque.rey@gmail.com" class="contact-link contact-link--email">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <p class="footer__copy">
+      © 2026 <a href="https://github.com/JoseLuisSR" target="_blank" rel="noopener">Jose Luis Sastoque Rey</a>.
+      Built with HTML &amp; CSS · Hosted on Docker.
+    </p>
+    <button class="footer__back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i> Back to top
+    </button>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.querySelector('i').className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+    });
+
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', false);
+        toggle.querySelector('i').className = 'fas fa-bars';
+      });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Navbar shadow on scroll
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => {
+      nav.style.boxShadow = window.scrollY > 20
+        ? '0 4px 24px rgba(0,0,0,0.4)'
+        : 'none';
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
