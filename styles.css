@@ -928,6 +928,26 @@
       color: var(--text-secondary);
     }
 
+    .community__item {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(88,166,255,0.2);
+    }
+
+    .community__item-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .community__item-meta {
+      font-size: 0.85rem;
+      color: var(--accent-blue);
+      font-weight: 500;
+      margin: 0 0 8px;
+    }
+
     /* ============================================================
        CONTACT
     ============================================================ */
@@ -1073,6 +1093,10 @@
         flex-direction: column;
         text-align: center;
         gap: 24px;
+      }
+
+      .community__item {
+        text-align: center;
       }
     }
 
